@@ -1,6 +1,6 @@
 import React from 'react'
 import { Wrapper, SubWrapper, SubWrapperAlt, Title, Text } from './styles'
-// import { Logo } from '../Picture'
+import { MainUnderline } from '../Input'
 
 const index = ({ Gallery, ...props }) => {
   return (
@@ -16,12 +16,21 @@ const index = ({ Gallery, ...props }) => {
         <Text>
           submit your email addrees for our newletter
         </Text>
+        <MainUnderline placeholder='yourname@email.com' />
         <SubWrapper />
-        {/* <SubWrapper >
 
-        </SubWrapper> */}
       </SubWrapperAlt>
-
+      <SubWrapper
+        padding='0'
+        justifyContent='space-around'
+        style={{ background: '#444', height:'40px' }} >
+        <Text style={{ fontSize: '10px', margin:'0' }} >
+          Would you like to here from us?
+        </Text>
+        <Text style={{ fontSize: '10px', margin:'0' }}>
+          submit your email addrees for our newletter
+        </Text>
+      </SubWrapper>
     </Wrapper>
   )
 }

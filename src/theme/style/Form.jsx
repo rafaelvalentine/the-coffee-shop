@@ -88,26 +88,26 @@ export const UnderLinedBox = styled.div`
  */
 export const MainInput = styled.input`
     width: ${props => props.width};
-    border: ${props => props.border ? props.border : '0.5px solid #54c4cf'};
+    border: ${props => props.border ? props.border : '0.5px solid transparent'};
     border-radius: 2px;
     height: ${props => props.height};
     background: transparent;
-    padding-left: 10px;
+    padding-left:30px;
     margin-bottom: 5px;
     font-weight: 300;
     font-size: 0.8rem;
-    color: ${props => props.theme.black};
+    color: ${props => props.theme.white};
 
     ::placeholder {
         font-size: 0.8rem;
+        color: ${props => props.theme.white};
     }
-
     &:focus {
         outline: none;
     }
 `
 MainInput.defaultProps = {
-  width: '100%',
+  width: '200px',
   height: '40px'
 }
 export const NoLabelInput = styled(MainInput)`
@@ -119,8 +119,14 @@ NoLabelInput.defaultProps = {
 }
 export const MainLabelContainer = styled.label`
     display: block;
-    margin: ${props => props.MainLabelContainerMargin ? props.MainLabelContainerMargin : '1rem'};
+    margin: ${props => props.MainLabelContainerMargin ? props.MainLabelContainerMargin : '10px'};
+    hr{
+        width:100%;
+				border: .5px solid white;
+				margin-top: -10px;
+    }
 `
+export const MainLabelContainerAlt = styled(MainLabelContainer)``
 export const UsedCard = styled.div`
     display: flex;
     border-radius: 0.2rem;
@@ -212,49 +218,3 @@ export const TableList = styled(TableHead)`
     letter-spacing: 0.1em;
     text-transform: uppercase;
 `
-/**
- *
- * .checkbox__input {
-    position: absolute;
-    top: 2px;
-    left: 0;
-    opacity: 0;
-}
-
-[type=checkbox], [type=radio] {
-    box-sizing: border-box;
-    padding: 0;
-}
-button, input {
-    overflow: visible;
-}
-button, input, optgroup, select, textarea {
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
- *
- *
- * .checkbox__label:after {
-    position: absolute;
-    top: 3px;
-    left: 0;
-    width: 14px;
-    height: 14px;
-    transition: all .2s ease-in-out;
-    border: 1px solid #7b7c7f;
-    border-radius: 2px;
-    background: #fff;
-    color: #fff;
-    font: 10px/13px icomoon!important;
-    font-variant: normal;
-    text-align: center;
-    text-transform: none;
-    content: "";
-
-    .checkbox__input:checked~.checkbox__label:after {
-    border-color: #2948ff;
-    color: #2948ff;
-    content: "\EA10";
-
- */
