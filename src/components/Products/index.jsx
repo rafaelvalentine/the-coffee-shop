@@ -20,7 +20,7 @@ const index = ({ Products, ...props }) => {
   ))
   return (
     <Wrapper
-      height='90vh'>
+      height='700px'>
       <SubWrapperAlt
         flexWrap='nowrap'
       >

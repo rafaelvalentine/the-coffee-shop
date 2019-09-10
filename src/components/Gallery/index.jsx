@@ -10,7 +10,7 @@ const index = ({ Gallery, ...props }) => {
   ))
   return (
     <Wrapper
-      height='90vh'>
+      height='970px'>
       <SubWrapperAlt
         flexWrap='nowrap'
       >

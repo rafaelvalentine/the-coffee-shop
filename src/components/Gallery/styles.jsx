@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
 background: ${props => props.theme.background};
 height: ${props => props.height ? props.height : '50vh'};
 width: 100%;
+margin: 50px 0 0;
 `
 export const SubWrapper = styled.div`
 width:100%;
