@@ -25,10 +25,10 @@ const index = ({ Gallery, ...props }) => {
         justifyContent='space-around'
         style={{ background: '#444', height:'40px' }} >
         <Text style={{ fontSize: '10px', margin:'0' }} >
-          Would you like to here from us?
+          All right reserved {new Date().getFullYear()}
         </Text>
         <Text style={{ fontSize: '10px', margin:'0' }}>
-          submit your email addrees for our newletter
+          +123 895 234 8945
         </Text>
       </SubWrapper>
     </Wrapper>

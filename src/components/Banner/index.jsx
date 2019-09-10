@@ -8,7 +8,7 @@ const Banner = ({ ...props }) => {
     <div>
       <Page.Jumbotron>
         <Navbar Admin={{}} />
-        <Text {...props} />
+        <Text className='animate' {...props} />
       </Page.Jumbotron>
     </div>
   )

@@ -95,13 +95,34 @@ export default class index extends Component {
     {
       image:require('../../assets/images/coffee-drink-flower-6067.jpg')
     }
-  ]
+  ],
+  showMission: false
 }
+
+// handleScroll = event => {
+//   // window.scroll({
+//   //   behavior: 'smooth'
+//   // })
+//  window.onscroll = ()=> {
+//       if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200  ) {
+//           this.setState({showMission: true})
+//       } 
+//   }
+// }
+
+// componentDidMount() {
+//   window.addEventListener('scroll', this.handleScroll, { passive: true })
+// }
+
+// componentWillUnmount() {
+//   window.removeEventListener('scroll', this.handleScroll)
+// }
+
   render () {
     return (
       <Wrapper>
         <Banner {...this.state.bannerText}/>
-        <Missions Missions={this.state.missions}/>
+        <Missions Missions={this.state.missions} show ={this.state.showMission}/>
         <Details altText='true' {...this.state.details} />
         <Products Products={this.state.products} />
         <Details 

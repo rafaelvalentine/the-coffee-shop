@@ -52,6 +52,35 @@ export const Jumbotron = styled.section`
             text-align: left;
         }
     }
+
+    -webkit-animation-name:banner; /* Safari 4.0 - 8.0 */
+-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+-webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-name: banner;
+  animation-duration: 1s;
+  @-webkit-keyframes banner {
+    from {
+        opacity: .15;
+        transform: translateX(1000px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+  }
+  
+  /* Standard syntax */
+  @keyframes banner {
+    from {
+        opacity: .15;
+        transform: translateX(1000px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+  }
 `
 export const TextWrapper = styled.section`
 width:450px
@@ -59,7 +88,37 @@ margin:auto 0;
 margin-left: ${props => props.marginLeft};
 margin-right: ${props => props.marginRight};
 text-align: ${props => props.textAlign ? props.textAlign : 'left'};
-align-self:${props => props.alignSelf}
+align-self:${props => props.alignSelf};
+&.animate {
+    -webkit-animation-name:banner-text; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      animation-name: banner-text;
+      animation-duration: 1.4s;
+      @-webkit-keyframes banner-text {
+        from {
+            opacity: .1;
+            transform: translateY(120px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+      }
+      
+      /* Standard syntax */
+      @keyframes banner-text {
+        from {
+            opacity: .1;
+            transform: translateY(120px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+      }
+}
 `
 TextWrapper.defaultProps = {
   marginLeft: '100px',

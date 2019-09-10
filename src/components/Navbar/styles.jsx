@@ -8,6 +8,22 @@ display: flex;
 justify-content: flex-start;
 align-items: center;
 padding:0 55px;
+-webkit-animation-name: navbar; /* Safari 4.0 - 8.0 */
+-webkit-animation-duration: 1.1s; /* Safari 4.0 - 8.0 */
+-webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  animation-name: navbar;
+  animation-duration: 1.1s;
+  @-webkit-keyframes navbar {
+    from {transform: translateY(-100px);}
+    to {transform: translateY(0px);}
+  }
+  
+  /* Standard syntax */
+  @keyframes navbar {
+    from {transform: translateY(-100px);}
+    to {transform: translateY(0px);}
+  }
 `
 export const SideNav = styled.div`
 display: flex;
