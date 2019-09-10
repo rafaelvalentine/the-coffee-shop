@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { device } from '../../components/device'
+// import { device } from '../../components/device'
 
 export const Wrapper = styled.div`
 background: ${props => props.theme.background};

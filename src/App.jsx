@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 // import { Container } from 'react-bootstrap'
-import { Route, Switch, withRouter, BrowserRouter as Router } from 'react-router-dom'
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
 

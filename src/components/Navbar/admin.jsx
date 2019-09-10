@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React from 'react'
 import * as Com from './styles'
 import { Admin as AdminIMG, Logo } from '../Picture'
 

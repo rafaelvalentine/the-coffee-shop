@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import freelancer from '../../assets/images/WinOS_1080x1920.jpg'
 import conffeeOne from '../../assets/images/coffeeOne.jpg'
 import conffeeTwo from '../../assets/images/coffeeTwo.jpg'
 

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import * as Page from './styles'
 import Navbar from '../Navbar'
 import Text from './BannerText'

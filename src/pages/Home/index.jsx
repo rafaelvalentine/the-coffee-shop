@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import Navbar from '../../components/Navbar'
 import { Wrapper } from '../../theme/style/styles'
 import Banner from '../../components/Banner'
 import Missions from '../../components/Mission'
 import Details from '../../components/Details'
 import Products from '../../components/Products'
 import Gallery from '../../components/Gallery'
+import Footer from '../../components/Footer'
 
 
 export default class index extends Component {
@@ -110,6 +110,7 @@ export default class index extends Component {
         SubWrapperDirection='row-reverse'
         {...this.state.details} />
         <Gallery Gallery={this.state.gallery} />
+        <Footer />
       </Wrapper>
     )
   }

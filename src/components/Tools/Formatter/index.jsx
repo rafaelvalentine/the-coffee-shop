@@ -1,6 +1,3 @@
-import React from 'react'
-import { Input } from './styles'
-
 
 export const formatAmount = num => {
   if (num === undefined) {
