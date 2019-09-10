@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
 background: ${props => props.theme.background};
-height: ${props => props.height ? props.height : '50vh'};
+min-height: 500px;
+// height: ${props => props.height ? props.height : '50vh'};
 width: 100%;
 margin: 50px 0 0;
 `
@@ -13,14 +14,14 @@ display: flex;
 flex-direction:${props => props.SubWrapperDirection ? props.SubWrapperDirection : 'row'};
 justify-content: ${props => props.justifyContent ? props.justifyContent : 'center' };
 align-items:center;
-padding:${props => props.padding ? props.padding : '64px 0 '};
+padding:${props => props.padding ? props.padding : '64px 0 0'};
 flex-wrap ${props => props.flexWrap ? props.flexWrap : 'wrap'};
 margin:0 auto;
 `
 export const SubWrapperAlt = styled(SubWrapper)`
 flex-direction:${props => props.SubWrapperAltDirection ? props.SubWrapperAltDirection : 'column'};
 align-items: center;
-padding:${props => props.padding ? props.padding : '64px 0 '};
+padding:${props => props.padding ? props.padding : '64px 0 0'};
 `
 
 export const GalleryCard = styled.div`

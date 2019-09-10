@@ -9,8 +9,7 @@ const index = ({ Gallery, ...props }) => {
     </GalleryCard>
   ))
   return (
-    <Wrapper
-      height='970px'>
+    <Wrapper>
       <SubWrapperAlt
         flexWrap='nowrap'
       >
@@ -20,7 +19,7 @@ const index = ({ Gallery, ...props }) => {
         <Text>
           coffee perfection since 1889
         </Text>
-        <SubWrapper justifyContent='flex-start'>
+        <SubWrapper justifyContent='center'>
           {gallery}
         </SubWrapper>
       </SubWrapperAlt>

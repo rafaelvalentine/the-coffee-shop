@@ -19,7 +19,7 @@ display: flex;
 flex-direction:${props => props.SubWrapperDirection ? props.SubWrapperDirection : 'row'};
 justify-content: ${props => props.justifyContent ? props.justifyContent : 'center' };
 align-items:center;
-padding:${props => props.padding ? props.padding : '64px 0 '};
+padding:${props => props.padding ? props.padding : '64px 0 0'};
 flex-wrap ${props => props.flexWrap ? props.flexWrap : 'wrap'};
 margin:0 auto;
 `
@@ -27,7 +27,7 @@ export const SubWrapperAlt = styled(SubWrapper)`
 flex-direction:${props => props.SubWrapperAltDirection ? props.SubWrapperAltDirection : 'column'};
 align-items: center;
 justify-content: ${props => props.justifyContent ? props.justifyContent : 'center' };
-padding:${props => props.padding ? props.padding : '64px 0 '};
+padding:${props => props.padding ? props.padding : '64px 0 0'};
 `
 
 export const Title = styled.p`
